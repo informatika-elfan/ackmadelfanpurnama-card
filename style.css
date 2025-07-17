@@ -39,6 +39,7 @@ body {
   align-items: center;
   margin-bottom: 20px;
   animation: fadeInHeader 1.6s ease-in-out;
+  gap: 12px;
 }
 
 @keyframes fadeInHeader {
@@ -47,7 +48,8 @@ body {
 }
 
 .logo {
-  height: 60px;
+  height: 40px;
+  object-fit: contain;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -133,4 +135,28 @@ h1 {
 
 .qrcode img:hover {
   transform: rotate(5deg) scale(1.07);
+}
+
+.qrcode-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #0050A3, #00A8FF);
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px rgba(0, 80, 160, 0.2);
+  transition: all 0.3s ease;
+  margin-bottom: 5px;
+}
+
+.qrcode-btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 80, 160, 0.4);
+}
+
+.qrcode-desc {
+  font-size: 14px;
+  color: #003566;
+  font-style: italic;
 }
