@@ -1,0 +1,116 @@
+/* style.css */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #ffffff;
+  color: #1a1a1a;
+  margin: 0;
+  padding: 20px;
+  animation: fadeInBody 1s ease-in-out;
+}
+
+@keyframes fadeInBody {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.card-container {
+  max-width: 400px;
+  margin: auto;
+  border: 2px solid #001f3f;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #ffffff;
+  animation: fadeInCard 1.3s ease-in-out;
+}
+
+@keyframes fadeInCard {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  animation: fadeInHeader 1.6s ease-in-out;
+}
+
+@keyframes fadeInHeader {
+  from { opacity: 0; transform: translateX(-20px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.logo {
+  height: 50px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+  transform: scale(1.1);
+}
+
+h1 {
+  text-align: center;
+  color: #001f3f;
+  margin-bottom: 10px;
+  animation: fadeInTitle 2s ease-in-out;
+}
+
+@keyframes fadeInTitle {
+  from { opacity: 0; transform: scale(0.8); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.content {
+  animation: fadeInContent 2.5s ease-in-out;
+}
+
+@keyframes fadeInContent {
+  from { opacity: 0; transform: translateX(10px); }
+  to { opacity: 1; transform: translateX(0); }
+}
+
+.content p {
+  margin: 5px 0;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.content p:hover {
+  background-color: #f0f8ff;
+}
+
+.content a {
+  color: #007BFF;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.content a:hover {
+  color: #0056b3;
+}
+
+.qrcode {
+  margin-top: 20px;
+  text-align: center;
+  animation: fadeInQR 3s ease-in-out;
+}
+
+@keyframes fadeInQR {
+  from { opacity: 0; transform: rotateX(90deg); }
+  to { opacity: 1; transform: rotateX(0); }
+}
+
+.qrcode img {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #001f3f;
+  padding: 6px;
+  border-radius: 8px;
+  transition: transform 0.4s ease-in-out;
+}
+
+.qrcode img:hover {
+  transform: rotate(5deg) scale(1.05);
+}
